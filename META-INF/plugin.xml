@@ -1,0 +1,56 @@
+<idea-plugin version="2">
+    <id>ru.itbasis.plugins.intellij.hashGenerator</id>
+    <name>Plugin display name here</name>
+    <version>0.3</version>
+    <vendor email="Victor@Alenkov.name" url="https://github.com/BorzdeG">Victor Alenkov</vendor>
+
+    <description><![CDATA[
+      Plugin to calculate Hash code for the text string
+    ]]></description>
+
+    <change-notes><![CDATA[
+    <p>version 0.3</p>
+	<ul>
+		<li>change: package name</li>
+		<li>change: contact information</li>
+	</ul>
+      <p>version 0.2.2</p>
+	<ul>
+		<li>add: calculate BCrypt (maximum number of rounds = 10)</li>
+	</ul>
+	<p>version 0.1</p>
+	<ul>
+		<li>add: calculate CRC32</li>
+	</ul>
+    ]]>
+    </change-notes>
+
+    <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+    <idea-version since-build="131"/>
+
+    <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+         on how to target different products -->
+    <depends>com.intellij.modules.lang</depends>
+    <resource-bundle>ru.itbasis.plugins.intellij.hashGenerator.resources.i18n.messages</resource-bundle>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <application-components>
+        <!-- Add your application components here -->
+    </application-components>
+
+    <project-components>
+        <!-- Add your project components here -->
+    </project-components>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="hashGenerator" anchor="bottom" secondary="true"
+                    factoryClass="ru.itbasis.plugins.intellij.hashGenerator.ui.HashGeneratorToolWindowFactory"/>
+    </extensions>
+</idea-plugin>
