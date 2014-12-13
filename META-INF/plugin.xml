@@ -1,6 +1,6 @@
 <idea-plugin version="2">
     <id>ru.itbasis.plugins.intellij.hashGenerator</id>
-    <name>Plugin display name here</name>
+    <name>Hash Generator</name>
     <version>0.3</version>
     <vendor email="Victor@Alenkov.name" url="https://github.com/BorzdeG">Victor Alenkov</vendor>
 
